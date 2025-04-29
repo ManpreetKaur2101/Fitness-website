@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Services</title>
+    <style>
+        :root {
+            --snd-bg-color: hsl(0, 6%, 7%);
+            --bg-color: #100101;
+            --main-color: #232527;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-color);
+            padding: 10px;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .Workout {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 40px;
+            color: rgb(134, 130, 130);
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 6.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .subheading {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #d3d3d3;
+            font-style: italic;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            align-items: center;
+            gap: 2.3rem;
+            margin-top: 4.1rem;
+        }
+
+        .row {
+            background: var(--bg-color);
+            border-radius: 27px;
+            border: 1px solid transparent;
+            box-shadow: 0 5px 15px rgba(243, 235, 235, 0.884);
+            padding: 20px;
+            transition: all 0.5s ease;
+        }
+
+        .row img {
+            height: auto;
+            width: 100%;
+            border-radius: 27px;
+            margin-bottom: 1.4rem;
+            transition: transform 0.3s;
+        }
+
+        .row img:hover {
+            transform: scale(1.1);
+        }
+
+        .row h4 {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            color: #9c9999f2;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #c2c2c2;
+            line-height: 1.6;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: var(--main-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cta-btn:hover {
+            background-color: #555;
+        }
+
+        .row:hover {
+            border: 1px solid var(--main-color);
+            transform: translateY(-5px) scale(1.04);
+            cursor: pointer;
+        }
+
+        .testimonials {
+            background-color: var(--snd-bg-color);
+            padding: 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-content {
+            background-color: var(--bg-color);
+            color: #d3d3d3;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .social-media a img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-media a img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#Workout">Workout</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="Workout" id="Workout">
+        <h2 class="heading"><span>WORKOUT</span></h2>
+        <p class="subheading">Transform Your Body, Transform Your Life</p>
+        <div class="content">
+            <div class="row">
+                <img src="image1.jpg" alt="Physical fitness">
+                <h4>Physical Fitness</h4>
+                <p class="description">Enhance your overall health with tailored fitness routines that boost your energy, improve endurance, and sculpt your physique.</p>
+                <button class="cta-btn">Join Now</button>
+            </div>
+
+            <div class="row">
+                <img src="image2.avif" alt="Cardio workout">
+                <h4>Cardio</h4>
+                <p class="description">Boost your heart health with intense cardio sessions designed to burn calories and increase stamina.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+
+            <div class="row">
+                <img src="image3.jpg" alt="Strength training">
+                <h4>Strength Training</h4>
+                <p class="description">Build muscle, improve strength, and increase your metabolic rate with our expert-led strength training programs.</p>
+                <button class="cta-btn">Join Now</button>
+            </div>
+
+            <div class="row">
+                <img src="image4.avif" alt="Weight lifting">
+                <h4>Weight Lifting</h4>
+                <p class="description">Master the art of lifting with our comprehensive guides that help you lift safely and effectively.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+
+            <div class="row">
+                <img src="image5.jpg" alt="Running exercise">
+                <h4>Running</h4>
+                <p class="description">Increase your endurance and achieve your running goals with structured running plans that suit all levels.</p>
+                <button class="cta-btn">Join Now</button>
+            </div>
+
+            <div class="row">
+                <img src="image6.jpg" alt="Yoga">
+                <h4>Yoga</h4>
+                <p class="description">Achieve mental and physical balance through yoga, with sessions that improve flexibility, strength, and relaxation.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="Testimonials" class="testimonials">
+        <h2 class="heading">Testimonials</h2>
+        <div class="testimonial-content">
+            <!-- Testimonial Entries Here -->
+        </div>
+    </section>
+
+    <footer id="Contact">
+        <div class="footer-content">
+            <h4>Contact Us</h4>
+            <p>Email: info@workoutservices.com</p>
+            <p>Phone: +123 456 7890</p>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
